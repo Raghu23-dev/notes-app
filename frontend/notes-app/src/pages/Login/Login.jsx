@@ -48,14 +48,12 @@ const Login = () => {
               onChange={(e) => setEmail(e.target.value)}
             />
 
-            {/* Error message display */}
-            {error && <p className="text-red-500 text-xs pb-1 mb-4">{error}</p>}
-
             <PasswordInput
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="Password"
             />
+            {error && <p className="text-red-500 text-xs pb-1 mb-4">{error}</p>}
 
             <button
               type="submit"
